@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const sum = [3, 2, 1].reduce((newVal, oldVal) => {
+            console.log(newVal, oldVal)
+            return newVal + oldVal;
+        }, 10) //16
+
+        const total = [3, 2, 1].reduce(Math.pow) // 9
+        console.log(sum, 'sum')
+    </script>
+</body>
+
+</html>
